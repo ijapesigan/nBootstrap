@@ -1,0 +1,35 @@
+Package: nBootstrap
+Title: Nonparametric Bootstrap Confidence Intervals
+Version: 0.1.0
+Authors@R: 
+    person(given = "Ivan Jacob Agaloos",
+           family = "Pesigan",
+           role = c("aut", "cre", "cph"),
+           email = "r.jeksterslab@gmail.com",
+           comment = c(ORCID = "0000-0003-4818-8420"))
+Description: Nonparametric bootstrap helpers: percentile, bias-corrected,
+    and bias-corrected and accelerated confidence intervals from a matrix
+    of draws, and nonparametric bootstrap and jackknife half-vectorized
+    covariance matrices computed in C++.
+    PCCI(), BCCI(), and BCaCI() are exported; the internal workers are
+    copied by other projects.
+URL: https://github.com/ijapesigan/nBootstrap, https://ijapesigan.github.io/nBootstrap/
+BugReports: https://github.com/ijapesigan/nBootstrap/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 3.0.0)
+Imports:
+    Rcpp,
+    stats
+LinkingTo:
+    Rcpp,
+    RcppArmadillo
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.1.9000

@@ -1,0 +1,51 @@
+---
+title: "nBootstrap"
+author: "Ivan Jacob Agaloos Pesigan"
+output: rmarkdown::html_vignette
+bibliography: "vignettes.bib"
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+nocite: |
+  @RCoreTeam-2026
+---
+
+<!-- README.md is generated from .setup/readme/README.Rmd. Please edit that file -->
+
+```{r}
+#| include = FALSE
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/vignettes-",
+  out.width = "100%"
+)
+```
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+## Description
+
+Nonparametric bootstrap helpers in R [@RCoreTeam-2026]:
+percentile, bias-corrected, and bias-corrected and accelerated
+confidence intervals from a matrix of draws,
+and nonparametric bootstrap and jackknife half-vectorized
+covariance matrices computed in C++.
+The functions are internal; other projects copy them.
+
+## Installation
+
+You can install the development version of `nBootstrap` from
+[GitHub](https://github.com/ijapesigan/nBootstrap) with:
+
+```r
+if (!require("pak")) install.packages("pak")
+pak::pkg_install("ijapesigan/nBootstrap")
+```
+
+## More Information
+
+See
+[GitHub Pages](https://ijapesigan.github.io/nBootstrap)
+for package documentation.
+
+## References
