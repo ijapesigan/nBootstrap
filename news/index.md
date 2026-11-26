@@ -15,9 +15,10 @@
 ### Improvements
 
 - The interval quantiles are computed in C++ (`.Quantile()`), with the
-  arithmetic of `stats::quantile(type = 7)`: the results are identical
-  (tests require
-  [`identical()`](https://rdrr.io/r/base/identical.html)).
+  arithmetic of `stats::quantile(type = 7)`: the results equal those of
+  [`stats::quantile()`](https://rdrr.io/r/stats/quantile.html) to a
+  relative tolerance of `1e-12` (not bit for bit: compilers may fuse the
+  interpolation into one multiply-add, as on the CI runners).
 
 ### Bug fixes
 
